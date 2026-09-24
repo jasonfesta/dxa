@@ -2,7 +2,7 @@
 
 [Home](../README.md) · [Agents](agents.md) · [Skills](skills.md) · [Evidence labels](README.md)
 
-Connections that let an assistant work with design files, components, and running interfaces. Sources reviewed September 24, 2026. All entries below are **source reviewed**, not connection or workflow tests.
+Connections that let an assistant work with design files, components, and running interfaces. The first eight entries and additions explicitly labeled **source reviewed** were checked against primary sources on September 24, 2026. Prior-research entries are labeled separately. None is a DxA connection or workflow test.
 
 | Connection | Maintainer | What it connects |
 | --- | --- | --- |
@@ -14,6 +14,12 @@ Connections that let an assistant work with design files, components, and runnin
 | [Framelink](#framelink) | Community | Figma context for implementation |
 | [Figma Console](#figma-console) | Community, Southleft | Figma inspection and automation |
 | [Playwright](#playwright) | Official project, Microsoft | Browser interaction and inspection |
+| [Canva](#canva) | Official | Design creation, editing, assets, and export |
+| [TalkToFigma](#talktofigma) | Community, Grab | Read/write access through a Figma plugin |
+| [OpenPencil](#openpencil) | Two separate projects | Editable design documents |
+| [ShaderVine](#shadervine) | Project-maintained | Shader authoring and export |
+| [Typography](#typography) | Community, Standard Beagle | Font metrics and typography tooling |
+| [Framer connections](#framer-connections) | Official native bridge; community MCP alternative | Canvas, components, and CMS |
 
 ## Figma
 
@@ -78,3 +84,59 @@ Lets an assistant navigate and interact with a browser, inspect page structure, 
 Requires the runtime and browser setup documented upstream. Browser inspection supports QA but does not by itself prove visual quality or accessibility compliance.
 
 [Source and setup](https://github.com/microsoft/playwright-mcp)
+
+## Canva
+
+**Source reviewed · Official**
+
+Canva's current MCP documentation describes design creation and editing, library search, assets and brand kits, exports, and comments. It is not merely a documentation-search MCP. Access is authenticated, and supported operations depend on permissions and service limits.
+
+Use the end-user connector instructions linked from the documentation for a personal assistant; the developer guide also covers teams building integrations.
+
+[Documentation](https://www.canva.dev/docs/apps/mcp/)
+
+## TalkToFigma
+
+**Source reviewed · Community integration maintained at Grab**
+
+Connect an assistant to Figma through the project's plugin and communication bridge. Inspect which read/write tools are available and keep the required plugin connected. The older sonnylazuardi repository redirects to Grab.
+
+[Source and setup](https://github.com/grab/cursor-talk-to-figma-mcp)
+
+## OpenPencil
+
+**Source reviewed · Project-maintained integrations**
+
+[open-pencil/open-pencil](https://github.com/open-pencil/open-pencil) exposes document inspection, editing, and export through its MCP. Scope filesystem access to the intended project.
+
+[ZSeven-W/openpencil](https://github.com/ZSeven-W/openpencil) is a different product with its own MCP and agent workflow. Read the matching repository; these integrations are not interchangeable.
+
+## ShaderVine
+
+**Source reviewed · Project-maintained**
+
+Shader tooling with an MCP surface for creating and working with effects. Follow the repository's current server and runtime instructions; an MCP connection alone does not validate the visual result.
+
+[Source](https://github.com/jonradoff/shadervine) · [Graphics research](shaders.md#agent-tools-for-graphics)
+
+## Typography
+
+**Prior research · Standard Beagle**
+
+The local font-tool study identified a typography CLI/MCP for font metrics, axes, subsets, scales, and fallbacks. It is not an agent that draws new glyph outlines. Recheck the package's current availability and setup before installation.
+
+[Source](https://github.com/standardbeagle/standardbeagle-tools/tree/main/packages/typography) · [Font research](typography.md)
+
+## Framer connections
+
+**Source reviewed · Official native connection and separate community alternative**
+
+Start with [Framer's external-agent guide](https://www.framer.com/agents/external/), which explicitly says a separate MCP server is not required. Do not describe that native connection as a community MCP.
+
+The marketplace also lists an independent [MCP plugin](https://www.framer.com/marketplace/plugins/446/), whose listing states it is not an official Framer plugin. Use its own setup and permission model if choosing that route.
+
+## Find additional integrations
+
+[Figma's MCP catalog](https://www.figma.com/mcp-catalog/) is a discovery source, not one server that installs everything. Check the named provider, requested permissions, client compatibility, and whether a tool reads, writes, exports, or publishes.
+
+Use a duplicate design file or a branch for an initial write test. Keep API keys outside repository files. Ask before publishing a site, deleting content, or exposing private design material.

@@ -4,9 +4,11 @@
 
 ## Discovery
 
-[podo/design-agent-skills](https://github.com/podo/design-agent-skills), maintained by podo, helped map the design skill ecosystem and informed our initial research.
+[podo/design-agent-skills](https://github.com/podo/design-agent-skills), by Giedrius Jaloveckas / podo, is the discovery source for the 151-entry skill catalogue. Every external record in the inspected snapshot is accounted for in the [coverage audit](catalogue-audit.md). Its [MIT notice](upstream-license.md) is retained.
 
 DxA uses its own organization, descriptions, and workflow instructions. We link to original projects rather than redistribute their implementation skills.
+
+Our [shader](shaders.md), [typography](typography.md), and [local study](local-studies.md) pages credit the public projects encountered in our own design research. Codrops authors, Paper, the Three.js and Poimandres communities, font-tool authors, and each linked project retain authorship of their work. Local research summaries do not grant rights to private code, font binaries, or reference artwork.
 
 [Vercel's Skills CLI](https://github.com/vercel-labs/skills) provides optional installation into compatible assistants.
 

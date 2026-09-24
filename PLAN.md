@@ -2,6 +2,8 @@
 
 Repository and editorial plan. Prepared September 24, 2026.
 
+Scope update, September 24: the original small-directory target below is superseded. The current edition retains all 151 external records from the audited upstream catalogue and adds local shader, glass, WebGL typography, font, MCP, and creative-tool research. Use the [resource directory](resources/README.md) and [coverage audit](resources/catalogue-audit.md) as the current scope; the remainder of this document preserves the initial planning rationale.
+
 Implementation note: the first source-reviewed directory, event page, original skills, and workflow recipes are now prepared. The README and linked directories are the current public copy. The recipes have not been run as end-to-end third-party workflow tests. This document preserves the planning rationale.
 
 ## Positioning

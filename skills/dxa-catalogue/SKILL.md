@@ -10,6 +10,15 @@ Help a designer choose a small toolset for a concrete artifact. Use the user's e
 
 Distinguish an agent or workspace from an MCP connection and a skill. A listed resource does not imply that it is installed, connected, free to operate, or tested.
 
+For requests beyond the starting points below, consult the current [DxA directory](https://github.com/jasonfesta/dxa/blob/main/resources/README.md), using local repository copies when available. Read only the relevant section:
+- Broad design guidance: [skill catalogue](https://github.com/jasonfesta/dxa/blob/main/resources/skills.md).
+- Tool connections: [MCPs](https://github.com/jasonfesta/dxa/blob/main/resources/mcps.md).
+- Graphics and optical effects: [shaders](https://github.com/jasonfesta/dxa/blob/main/resources/shaders.md).
+- Fonts and WebGL text: [typography](https://github.com/jasonfesta/dxa/blob/main/resources/typography.md).
+- Design assistants, including Muse: [agents](https://github.com/jasonfesta/dxa/blob/main/resources/agents.md).
+
+Catalogue references and prior research are discovery evidence, not installation or output-quality tests. If a directory cannot be accessed, say so and work from available sources without inventing its contents. Do not install whole collections just because they appear in the guide.
+
 Match the task to a starting point:
 - Editable design exploration: [Paper](https://paper.design/docs/mcp) or [Pen.dev](https://www.pen.dev/).
 - Existing design-system implementation: [Figma MCP](https://developers.figma.com/docs/figma-mcp-server/).

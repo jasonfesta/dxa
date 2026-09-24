@@ -12,6 +12,12 @@ Tools for exploring, designing, and building products. Sources reviewed Septembe
 | [Onlook](#onlook) | Visual development workspace | Edit a React interface visually and through AI. |
 | [Screenshot to Code](#screenshot-to-code) | Generation application | Turn a visual reference into a code starting point. |
 | [Open AI Design Agent](#open-ai-design-agent) | Creative agent application | Explore posters, social assets, and brand production. |
+| [Muse and design specialists](#muse-and-design-specialists) | Agent instructions | Coordinate design tokens, direction, interaction, and critique. |
+| [Open Design](#open-design) | Local-first workspace | Produce editable prototypes and creative deliverables. |
+| [Dyad](#dyad) | Local app builder | Iterate on a working product prototype. |
+| [OpenPencil projects](#openpencil-projects) | Design editors | Work with agents on editable vector documents. |
+| [Framer](#framer) | Native agent connection | Work on canvas, components, and CMS. |
+| [Drawing to UI](#drawing-to-ui) | Prototype references | Study sketch-to-interface workflows. |
 
 ## Paper
 
@@ -72,3 +78,58 @@ A community creative application for work such as posters, social graphics, and 
 Self-hosting requires frontend/backend dependencies and the provider configuration documented upstream. Earlier local research passed build and backend checks, but did not test generation.
 
 [Source and setup](https://github.com/Anil-matcha/Open-AI-Design-Agent)
+
+## Muse and design specialists
+
+**Source reviewed · simota · Agent skill collection**
+
+[Muse](https://github.com/simota/agent-skills/tree/main/muse) is a named design-system specialist in this collection. Use it to reason about tokens, spacing, and visual consistency. It is an instruction-based agent role, not a standalone canvas application.
+
+The same [repository](https://github.com/simota/agent-skills) includes Vision for creative direction, Frame for design-to-code work, Echo for persona-based review, and Flow for motion. Inspect current role definitions and select only the ones needed. Synthetic critique does not replace user research.
+
+This identifies one concrete Muse resource relevant to DxA; the name is shared by unrelated products.
+
+## Open Design
+
+**Source reviewed · nexu-io · Design workspace**
+
+A local-first workspace for prototypes and creative deliverables driven by coding agents. Follow its current supported-client and model-provider setup; local software does not make model usage free.
+
+[Source](https://github.com/nexu-io/open-design)
+
+## Dyad
+
+**Source reviewed · dyad-sh · App builder**
+
+A local app-building environment for moving from a design idea to a working interface. Check supported providers, project requirements, and the distinction between open-source and paid capabilities.
+
+[Source](https://github.com/dyad-sh/dyad)
+
+## OpenPencil projects
+
+**Source reviewed · Separate projects**
+
+- [open-pencil/open-pencil](https://github.com/open-pencil/open-pencil): a design editor with a programmable document engine, CLI, and MCP. Useful for editable vector documents and automated inspection.
+- [ZSeven-W/openpencil](https://github.com/ZSeven-W/openpencil): a separate agent-oriented vector design tool with its own runtime and MCP workflow.
+
+Do not mix their package names, setup instructions, or file-format claims. Confirm the exact project before connecting an assistant.
+
+## Framer
+
+**Source reviewed · Framer · Native agent connection**
+
+Framer's current external-agent workflow gives connected assistants access to canvas, components, and CMS. Its official documentation says a separate MCP server is not required. Changes and publication should remain separate decisions.
+
+[Official connection guide](https://www.framer.com/agents/external/) · [MCP distinction](mcps.md#framer-connections)
+
+## Drawing to UI
+
+**Source reviewed · Historical prototype references**
+
+[tldraw Make Real](https://github.com/tldraw/make-real) demonstrates drawing-to-interface generation. That repository is archived; treat it as a reference, not an actively maintained default. It credits [SawyerHood/draw-a-ui](https://github.com/SawyerHood/draw-a-ui) as its origin.
+
+Inspect the current SDK, model access, and license before adapting either project.
+
+## Related directories
+
+[Creative media tools](creative-tools.md) · [Graphics agents](shaders.md#agent-tools-for-graphics) · [Font agents](typography.md#font-agents-and-production-tools) · [Complete skill catalogue](skills.md)

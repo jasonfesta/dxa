@@ -4,6 +4,19 @@
 
 ## September 24, 2026
 
+### Expanded directory
+
+- Expanded the external skill catalogue from ten selections to all 151 upstream resource records, organized into 18 sections.
+- Accounted for the six upstream router guides separately; retained the upstream license notice and added a coverage audit.
+- Added dedicated shader, WebGL, glass, typography, font-agent, creative-media, and local-study pages.
+- Expanded agents and connections with Muse, Open Design, Dyad, two distinct OpenPencil projects, Canva, TalkToFigma, ShaderVine, typography tooling, and Framer's native connection.
+- Added evidence labels that distinguish catalogue references, prior research, current source reviews, and actual tests.
+- Kept original descriptions and source links without importing third-party skill implementations or private local project files.
+- Checked coverage for all 151 records, validated local links and heading anchors, and verified the updated catalogue skill's metadata and isolated copy installation.
+- Checked 261 external destinations, disclosed blocked or unresolved checks, and replaced one unavailable standalone repository with its maintainer's collection. See the [link-check record](catalogue-audit.md#link-check).
+
+### First edition
+
 Prepared the first Design xAgents resource guide:
 
 - Event-centered README and the supplied September 29 artwork.
@@ -15,7 +28,7 @@ Prepared the first Design xAgents resource guide:
 
 Third-party entries are source reviewed. Earlier setup observations are scoped in the entries; no end-to-end third-party workflow test is claimed. Recipes are starting points, not reports of completed event demos.
 
-Muse is pending identification of the intended product. Record it only once a canonical source is known.
+The first edition left Muse unidentified. The expanded directory now includes the design-system specialist in simota/agent-skills, with its exact source; similarly named products are not assumed to be the same tool.
 
 ## Repository checks
 
