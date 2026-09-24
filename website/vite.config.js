@@ -7,8 +7,7 @@ import glsl from "vite-plugin-glsl";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 const markdownFiles = [
-  { fileName: "design-xagents.md", path: resolve(__dirname, "../README.md") },
-  { fileName: "agent.md", path: resolve(__dirname, "../agent.md") },
+  { fileName: "DxA.md", path: resolve(__dirname, "../README.md") },
 ];
 
 export default defineConfig({

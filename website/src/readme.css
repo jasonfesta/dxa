@@ -52,10 +52,10 @@ hr { margin: 32px 0; border: 0; border-top: 1px solid #e5e5e5; }
   min-height: 36px;
   padding: 0 14px;
   border: 1px solid #000;
-  border-radius: 999px;
-  background: #fff;
-  color: #000;
-  font-family: Inter, Arial, sans-serif;
+  border-radius: 0;
+  background: #000;
+  color: #fff;
+  font-family: 'Instrument Sans', Arial, sans-serif;
   font-size: 12px;
   font-weight: 400;
   letter-spacing: 0;
@@ -65,8 +65,7 @@ hr { margin: 32px 0; border: 0; border-top: 1px solid #e5e5e5; }
 }
 .bottom-links a:hover,
 .bottom-links a:focus-visible {
-  background: #000;
-  color: #fff;
+  text-decoration: underline;
 }
 @media (max-width: 480px) {
   body { padding: 24px 20px 56px; }

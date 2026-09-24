@@ -10,15 +10,17 @@ Presented by **Mercor**. An evening of experiments and demos about designing pro
 
 [Registration and current availability](https://luma.com/g4vhqudr)
 
-## People
+## Featured people
 
-| Presenter | Affiliation listed by the event | Public profile |
+The public Luma page lists these featured demos and presenters, plus "and more." A complete attendee list is not public.
+
+| Person | Event listing | Public links |
 | --- | --- | --- |
-| Christopher Sim | OpenAI; previously Harvey | [LinkedIn](https://www.linkedin.com/in/thisiscsim/) |
-| Tom Krcha | Pen.dev | [X](https://x.com/tomkrcha) |
-| Michal Simkovic | Mercor | [X](https://x.com/musho) |
+| Christopher Sim | OpenAI; previously Harvey | [Luma event](https://luma.com/g4vhqudr) · [X](https://x.com/thisiscsim) · [LinkedIn](https://www.linkedin.com/in/thisiscsim/) |
+| Tom Krcha | Pen.dev | [Luma event](https://luma.com/g4vhqudr) · [X](https://x.com/tomkrcha) · [LinkedIn](https://www.linkedin.com/in/tomkrcha) |
+| Michal Simkovic | Mercor | [Luma event](https://luma.com/g4vhqudr) · [X](https://x.com/musho) · [Website](https://musho.sk/) |
 
-Details and affiliations were checked against the [public event page](https://luma.com/g4vhqudr) on September 24, 2026. The venue address and admission details are provided through registration.
+Details and affiliations were checked against the [public event page](https://luma.com/g4vhqudr) on September 24, 2026. Social/profile links are public profiles matched to the listed people. The venue address and admission details are provided through registration.
 
 ## Related resources
 
