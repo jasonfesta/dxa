@@ -35,12 +35,19 @@ body {
   cursor: grabbing;
 }
 
-.readme-link {
+.bottom-links {
   position: fixed;
   left: 50%;
   bottom: 24px;
   z-index: 10;
   transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottom-links a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -59,14 +66,14 @@ body {
   white-space: nowrap;
 }
 
-.readme-link:hover,
-.readme-link:focus-visible {
+.bottom-links a:hover,
+.bottom-links a:focus-visible {
   background: #000;
   color: #fff;
 }
 
 @media (max-width: 640px) {
-  .readme-link {
+  .bottom-links {
     bottom: 18px;
   }
 }

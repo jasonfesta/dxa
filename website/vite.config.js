@@ -6,8 +6,10 @@ import glsl from "vite-plugin-glsl";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
-const guideMarkdownPath = resolve(__dirname, "../README.md");
-const guideMarkdownFileName = "design-xagents.md";
+const markdownFiles = [
+  { fileName: "design-xagents.md", path: resolve(__dirname, "../README.md") },
+  { fileName: "agent.md", path: resolve(__dirname, "../agent.md") },
+];
 
 export default defineConfig({
   plugins: [
@@ -15,17 +17,21 @@ export default defineConfig({
     {
       name: "dxa-guide-markdown",
       configureServer(server) {
-        server.middlewares.use(`/${guideMarkdownFileName}`, (_request, response) => {
-          response.setHeader("Content-Type", "text/markdown; charset=utf-8");
-          response.end(readFileSync(guideMarkdownPath, "utf8"));
-        });
+        for (const file of markdownFiles) {
+          server.middlewares.use(`/${file.fileName}`, (_request, response) => {
+            response.setHeader("Content-Type", "text/markdown; charset=utf-8");
+            response.end(readFileSync(file.path, "utf8"));
+          });
+        }
       },
       generateBundle() {
-        this.emitFile({
-          type: "asset",
-          fileName: guideMarkdownFileName,
-          source: readFileSync(guideMarkdownPath, "utf8"),
-        });
+        for (const file of markdownFiles) {
+          this.emitFile({
+            type: "asset",
+            fileName: file.fileName,
+            source: readFileSync(file.path, "utf8"),
+          });
+        }
       },
     },
   ],
