@@ -21,6 +21,7 @@ export default defineConfig({
         indexB: resolve(__dirname, "index-b.html"),
         indexC: resolve(__dirname, "index-c.html"),
         dxa: resolve(__dirname, "dxa.html"),
+        readme: resolve(__dirname, "readme.html"),
       },
       output: {
         manualChunks: {

@@ -5,6 +5,9 @@
 - `website/` — Website design and implementation.
 - `agents/` — Agent-related files and configuration.
 - `README.md` — Project overview.
+- `resources/`, `events/`, and `workflows/` — Public resource guide and event material.
+- `skills/` — Original, independently installable DxA skills.
+- `assets/` — Supplied event artwork and attribution.
 
 ## Working preferences
 
